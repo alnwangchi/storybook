@@ -43,7 +43,6 @@ export const Button = ({
       {...props}
     >
       {label}
-      <span className='text-black'>jjj</span>
     </button>
   );
 };
