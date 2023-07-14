@@ -8,7 +8,10 @@
 
     /* Bundler mode */
     "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
+    // 這個不知道幹啥的一直紅蚯蚓 關掉
+    // "allowImportingTsExtensions": true,
+    // 要加不然在 import 一直紅蚯蚓
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
