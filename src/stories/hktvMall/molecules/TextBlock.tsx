@@ -4,12 +4,13 @@ import Badge from '../atom/Badge';
 interface TextBlockProps {
   title: string;
   content: string;
+  className?: string;
 }
 
-const TextBlock: React.FC<TextBlockProps> = ({ title, content }) => {
+const TextBlock: React.FC<TextBlockProps> = ({ title, content, className = '' }) => {
   return (
-    <div className='p-2 space-y-2'>
-      <p>{title}</p>
+    <div className={`space-y-2 ${className}`}>
+      <p className='text-left'>{title}</p>
       <div className='flex justify-between'>
         <p>{content}</p>
         <div>
